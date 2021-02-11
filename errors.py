@@ -1,0 +1,2 @@
+class EntropyError(Exception):
+    pass
