@@ -38,7 +38,7 @@ Options:
 Usage: generator.py passphrase [OPTIONS] [SEPARATOR]
 
 Arguments:
-  [SEPARATOR]  [default:  ]
+  [SEPARATOR]  Default: [space]
 
 Options:
   -w, --word-count INTEGER  [default: 3]
