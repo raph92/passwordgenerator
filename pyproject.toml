@@ -7,13 +7,9 @@ authors = ["raphael <rtnanje@gmail.com>"]
 [tool.poetry.dependencies]
 python = "^3.9"
 tenacity = "^6.3.1"
-loguru = "^0.5.3"
-python-dotenv = "^0.15.0"
-python-decouple = "^3.4"
 Random-Word = "^1.0.7"
 PyYAML = "^5.4.1"
 typer = "^0.3.2"
-zxcvbn = "^4.4.28"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.2"
