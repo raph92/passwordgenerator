@@ -63,7 +63,7 @@ def get_random_words(n) -> list:
 
 @app.command()
 def password(
-    length: int,
+    length: int = typer.Argument(...),
     use_uppercase: bool = typer.Option(False, '-u', '--uppercase'),
     use_digits: bool = typer.Option(False, '-d', '--digits'),
     use_symbols: bool = typer.Option(False, '-s', '--symbols'),
@@ -80,7 +80,7 @@ def password(
 
 @app.command()
 def passphrase(
-    separator: str = typer.Argument(' '),
+    separator: str = typer.Argument(' ', show_default=False, help='Default: [space]'),
     word_count: int = typer.Option(3, '-w', '--word-count'),
     capitalize_words: bool = typer.Option(False, '-c', '--capitalize'),
 ):
